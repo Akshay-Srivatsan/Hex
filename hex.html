@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+<head>
+  <title>Hex</title>
+  <meta charset="utf-8"/>
+  <link rel="stylesheet" href="hex.css"/>
+  <link rel="stylesheet" href="hexTiles.css"/>
+  <link rel="stylesheet" href="gray.css"/>
+  <link rel="stylesheet" href="blue.css"/>
+  <link rel="stylesheet" href="red.css"/>
+</head>
+<body>
+  <p>
+    This app uses TogetherJS for online multiplayer.
+    If you want to play against someone, click the button below.
+    TogetherJS will then give you a link to invite another player and wait for them to join.
+    (If you click any of the cells before the other player joins, your computers will end up out of sync.)
+    You will get a notification when the other player joins.
+    You can change your display name after TogetherJS starts.
+  </p>
+  <p>
+    If you want to play in local multiplayer mode, ignore everything in the paragraph above.
+  </p>
+  <button id="start-togetherjs" type="button"
+   onclick="TogetherJS(this); return false"
+   data-end-togetherjs-html="End TogetherJS">
+    Start TogetherJS (Online Multiplayer)
+  </button>
+  <br/>
+  <br/>
+
+  <span id="currentMove">It is red's move.</span>
+  <br/>
+  <br/>
+  <div id="hex" class="hexContainer">
+  </div>
+
+  <form id="renegerate">
+    <fieldset>
+      <legend>Regenerate Game Board</legend>
+      <label for="width">Width:</label>
+      <input type="number" id="width" name="width" value="11" min="0" max="50"/>
+
+      <input type="number" id="height" name="height" value="11" min="0" max="50"/>
+      <label for="height">Height:</label>
+      <br/>
+      <input id="restart" type="submit" value="Restart!"/>
+    </fieldset>
+  </form>
+</body>
+<script>
+var TogetherJSConfig_cloneClicks = true;
+</script>
+<script src="hex.js">
+</script>
+<script src="https://togetherjs.com/togetherjs-min.js"></script>
+</html>

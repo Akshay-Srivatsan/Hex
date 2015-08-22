@@ -1,0 +1,11 @@
+span.hex.blue {
+  background-color: blue;
+}
+
+span.hex.blue::before {
+  border-bottom: 10px solid blue;
+}
+
+span.hex.blue::after {
+  border-top: 10px solid blue;
+}

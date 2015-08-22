@@ -1,0 +1,45 @@
+body {
+  font-family: arial;
+}
+
+fieldset {
+  margin: 0 auto;
+  width: 325px;
+}
+
+fieldset {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+input {
+  width: 75px;
+}
+
+label[for="width"] {
+  float: left;
+  margin-right: 10px;
+}
+
+#width {
+  float: left;
+}
+
+label[for="height"] {
+  float: right;
+  margin-right: 10px;
+}
+
+#height {
+  float: right;
+}
+
+#restart {
+  float: right;
+  clear: both;
+  margin-top: 10px;
+}
+
+.togetherjs-started {
+  background-color: red;
+}

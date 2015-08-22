@@ -1,0 +1,23 @@
+span.hex.gray {
+  background-color: gray;
+}
+
+span.hex.gray::before {
+  border-bottom: 10px solid gray;
+}
+
+span.hex.gray::after {
+  border-top: 10px solid gray;
+}
+
+span.hex.gray:hover {
+  background-color: lightgray;
+}
+
+span.hex.gray:hover::before {
+  border-bottom: 10px solid lightgray;
+}
+
+span.hex.gray:hover::after {
+  border-top: 10px solid lightgray;
+}

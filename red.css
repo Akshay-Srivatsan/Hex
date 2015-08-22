@@ -1,0 +1,11 @@
+span.hex.red {
+  background-color: red;
+}
+
+span.hex.red::before {
+  border-bottom: 10px solid red;
+}
+
+span.hex.red::after {
+  border-top: 10px solid red;
+}
