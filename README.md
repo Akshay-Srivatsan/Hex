@@ -1,4 +1,7 @@
 # Hex
+
+### [Play Now!](index.html)
+
 A simple Javascript implementation of Hex. It uses TogetherJS for rudimentary online multiplayer (it can also be played in local multiplayer mode). Due to differences in the handling of CSS between browsers, it works best in Chrome for desktop. Some other browser (like Firefox for desktop) are usable (there are random white lines on the game board, but everything works fine other than that), but others (like Safari) distort the game board significantly. I made this in (approximately) 3 hours, 15 minutes on August 21, 2015.
 
 ## Rules/Information
